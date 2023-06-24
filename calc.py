@@ -2,18 +2,25 @@ math = input('Привет! Выбери действие и напиши это
 first = int(input('Хорошо... Теперь напиши первое число: '))
 second = int(input('Окей... Теперь напиши второе число: '))
 
+print('')
+print(f'Выполняется {math}...')
+print('')
+
 if math.lower() == 'умножение':
     multi = first * second
-    print(f'Итак... Умножение {first} на {second} будет... {multi}!')
+    print(f'Умножение {first} на {second} равно {multi}!')
 
-if math.lower() == 'деление':
+elif math.lower() == 'деление':
     div = first / second
-    print(f'Итак... Деление {first} на {second} будет... {div}!')
+    print(f'Деление {first} на {second} равно {div}!')
 
-if math.lower() == 'сложение':
+elif math.lower() == 'сложение':
     plus = first + second
-    print(f'Итак... Сумма {first} и {second} равна... {plus}!')
+    print(f'Сумма {first} и {second} равна {plus}!')
 
-if math.lower() == 'вычитание':
+elif math.lower() == 'вычитание':
     minus = first - second
-    print(f'Итак... Разность {first} и {second} равна... {minus}!')
+    print(f'Разность {first} и {second} равна {minus}!')
+
+else:
+    print(f'Твоё действие {math} не существует!')
